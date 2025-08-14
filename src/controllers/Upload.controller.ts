@@ -51,7 +51,7 @@ export const DynamicLick = async (req: Request, res: Response) => {
 
   const encodedUrl = encodeURIComponent(`${url}`);
 
-  const deepLink = `surveypoc://Webscreen?url=${encodedUrl}`
+  const deepLink = `surveypoc://Survey?url=${encodedUrl}`
 
   return res.status(200).send(`
     <html>
